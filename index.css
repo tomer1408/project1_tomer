@@ -1,0 +1,63 @@
+#body {
+
+    background-image: url(Assetst/Image/cork.jpg);
+
+}
+
+#app {
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    background-image: url(Assetst/Image/papre.png);
+    background-size: cover;
+    font-weight: bold;
+    width: 50%;
+    height: 300px;
+
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+
+#notesBody {
+    display: flex;
+    padding: 20px;
+
+}
+
+.noteDiv {
+    background-image: url(Assetst/Image/note.png);
+    height: 220px;
+    width: 200px;
+    margin-right: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.noteTask {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 160px;
+    width: 160px;
+}
+
+.noteDateAndTime {
+    text-align: left;
+    font-weight: bold;
+}
+
+.deletButton {
+    text-align: right;
+
+}
+
+.showButton {
+    display: none;
+}
+
+.showButton :hover {
+    display: block;
+}
