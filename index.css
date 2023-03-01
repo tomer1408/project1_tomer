@@ -12,19 +12,27 @@
     background-size: cover;
     font-weight: bold;
     width: 50%;
-    height: 300px;
+    height: 400px;
+    font-family: 'Caveat';
+    font-size: large;
+}
 
+#titleDiv {
+    font-family: 'Phudu', cursive;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 input:hover {
     cursor: pointer;
 }
 
+.AppText {
+    font-size: xx-large;
+}
 
 #notesBody {
-    display: flex;
     padding: 20px;
-
 }
 
 .noteDiv {
@@ -34,15 +42,26 @@ input:hover {
     margin-right: 30px;
     background-size: cover;
     background-repeat: no-repeat;
+    float: left;
+    margin-bottom: 25px;
+
 }
 
 
 .noteTask {
-    overflow: auto;
-    overflow-y: scroll;
+    word-wrap: break-word;
     height: 160px;
     width: 160px;
+    margin-left: 10px;
+    overflow: hidden;
+
 }
+
+.noteTask:hover {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 
 .noteDateAndTime {
     text-align: left;
@@ -50,14 +69,56 @@ input:hover {
 }
 
 .deletButton {
-    text-align: right;
-
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
-.showButton {
-    display: none;
+.buttonSpan {
+    display: flex;
+    justify-content: left;
+    margin-top: 8px;
+    margin-left: 2px;
 }
 
-.showButton :hover {
-    display: block;
+
+.bi,
+.bi-x-circle {
+    background: none;
+    border: none;
+    visibility: hidden;
+}
+
+.notes:hover .bi,
+.bi-x-circle {
+    visibility: visible;
+}
+
+.noteTask {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.noteDateAndTime {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
